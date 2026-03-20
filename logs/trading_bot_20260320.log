@@ -1,0 +1,37 @@
+2026-03-20 13:59:56 | INFO     | trading_bot | Logging initialised. Log file: logs\trading_bot_20260320.log
+2026-03-20 13:59:56 | DEBUG    | trading_bot.client | Client ready. Base URL: https://testnet.binancefuture.com
+2026-03-20 13:59:56 | INFO     | trading_bot.orders | Submitting: BTCUSDT BUY MARKET qty=0.001
+2026-03-20 13:59:56 | INFO     | trading_bot.client | Placing order: BTCUSDT BUY MARKET qty=0.001 price=None stop=None
+2026-03-20 13:59:56 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1773995396790, 'recvWindow': 5000}
+2026-03-20 13:59:57 | DEBUG    | trading_bot.client | Response 400: {"code":-4164,"msg":"Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2026-03-20 13:59:57 | ERROR    | trading_bot.orders | API error [-4164]: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-03-20 14:00:44 | INFO     | trading_bot | Logging initialised. Log file: logs\trading_bot_20260320.log
+2026-03-20 14:00:44 | DEBUG    | trading_bot.client | Client ready. Base URL: https://testnet.binancefuture.com
+2026-03-20 14:00:44 | INFO     | trading_bot.orders | Submitting: BTCUSDT BUY MARKET qty=0.002
+2026-03-20 14:00:44 | INFO     | trading_bot.client | Placing order: BTCUSDT BUY MARKET qty=0.002 price=None stop=None
+2026-03-20 14:00:44 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.002', 'timestamp': 1773995444015, 'recvWindow': 5000}
+2026-03-20 14:00:45 | DEBUG    | trading_bot.client | Response 200: {"orderId":12894769755,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Y0X99F2vJgVZlMj7c19G4p","price":"0.00","avgPrice":"0.00","origQty":"0.002","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTim
+2026-03-20 14:00:45 | INFO     | trading_bot.client | Order placed! orderId=12894769755 status=NEW
+2026-03-20 14:00:45 | INFO     | trading_bot.orders | Success: orderId=12894769755 status=NEW executedQty=0.000 avgPrice=0.00
+2026-03-20 14:01:31 | INFO     | trading_bot | Logging initialised. Log file: logs\trading_bot_20260320.log
+2026-03-20 14:01:31 | DEBUG    | trading_bot.client | Client ready. Base URL: https://testnet.binancefuture.com
+2026-03-20 14:01:31 | INFO     | trading_bot.orders | Submitting: BTCUSDT SELL LIMIT qty=0.002
+2026-03-20 14:01:31 | INFO     | trading_bot.client | Placing order: BTCUSDT SELL LIMIT qty=0.002 price=90000 stop=None
+2026-03-20 14:01:31 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '90000', 'timeInForce': 'GTC', 'timestamp': 1773995491855, 'recvWindow': 5000}
+2026-03-20 14:01:32 | DEBUG    | trading_bot.client | Response 200: {"orderId":12894779124,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"D4V5ExyYkNESiKcbaDQPz5","price":"90000.00","avgPrice":"0.00","origQty":"0.002","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"update
+2026-03-20 14:01:32 | INFO     | trading_bot.client | Order placed! orderId=12894779124 status=NEW
+2026-03-20 14:01:32 | INFO     | trading_bot.orders | Success: orderId=12894779124 status=NEW executedQty=0.000 avgPrice=0.00
+2026-03-20 14:02:27 | INFO     | trading_bot | Logging initialised. Log file: logs\trading_bot_20260320.log
+2026-03-20 14:02:27 | DEBUG    | trading_bot.client | Client ready. Base URL: https://testnet.binancefuture.com
+2026-03-20 14:02:27 | INFO     | trading_bot.orders | Submitting: BTCUSDT SELL STOP qty=0.002
+2026-03-20 14:02:27 | INFO     | trading_bot.client | Placing order: BTCUSDT SELL STOP qty=0.002 price=80000 stop=80500
+2026-03-20 14:02:27 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': '0.002', 'price': '80000', 'stopPrice': '80500', 'timeInForce': 'GTC', 'timestamp': 1773995547204, 'recvWindow': 5000}
+2026-03-20 14:02:28 | DEBUG    | trading_bot.client | Response 400: {"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+2026-03-20 14:02:28 | ERROR    | trading_bot.orders | API error [-4120]: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-03-20 14:03:14 | INFO     | trading_bot | Logging initialised. Log file: logs\trading_bot_20260320.log
+2026-03-20 14:03:14 | DEBUG    | trading_bot.client | Client ready. Base URL: https://testnet.binancefuture.com
+2026-03-20 14:03:14 | INFO     | trading_bot.orders | Submitting: BTCUSDT SELL STOP_MARKET qty=0.002
+2026-03-20 14:03:14 | INFO     | trading_bot.client | Placing order: BTCUSDT SELL STOP_MARKET qty=0.002 price=None stop=80000
+2026-03-20 14:03:14 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': '0.002', 'stopPrice': '80000', 'timestamp': 1773995594026, 'recvWindow': 5000}
+2026-03-20 14:03:19 | DEBUG    | trading_bot.client | Response 400: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2026-03-20 14:03:19 | ERROR    | trading_bot.orders | API error [-1021]: Timestamp for this request is outside of the recvWindow.
